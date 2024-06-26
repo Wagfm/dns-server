@@ -1,0 +1,21 @@
+$TTL 2d
+
+$ORIGIN maciel.br.
+
+@           IN        SOA           ns.maciel.br.   wagner.varginha.hotmail.com (
+                                    2024042000 ; serial
+                                    12h        ; refresh
+                                    15m        ; retry
+                                    3w         ; expire
+                                    2h         ; minimum ttl
+                                    )
+
+            IN        NS            ns.maciel.br.
+
+ns          IN        A             192.168.0.2
+
+; -- dns entries --
+
+router          IN        A             192.168.0.1
+server          IN        A             192.168.0.2
+
